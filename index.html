@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webreate</title>
+    <script src="https://webreate.authlink.me/js/sdk/otpless.js"></script>
+  </head>
+
+  <body>
+    <button id="whatsapp-login"></button>
+  </body>
+  <script>
+    //OTPless Success Callback
+    function otpless() {
+      //OTPless waId
+      const waId = otplessWaId();
+      console.log({
+        waId,
+      });
+
+      //webreate Redirection
+      window.open("https://riyorentitoverindia.com", "_blank");
+    }
+  </script>
+</html>

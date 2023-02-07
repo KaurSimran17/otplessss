@@ -17,13 +17,10 @@
     function otpless() {
       //OTPless waId
       const waId = otplessWaId();
+      const waNumber = otplessWaNumber();
       console.log({
-        waId,
+        waId, waNumber,
       });
-
-      let num = document.getElementsByTagName('p').innerText;
-      console.log("num",num);
-
       //webreate Redirection
       window.open("https://riyorentitoverindia.com", "_blank");
     }
